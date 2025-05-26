@@ -1,0 +1,20 @@
+services:
+  api:
+    build: ./api
+    environment:
+      - FINNHUB_API_KEY=${FINNHUB_API_KEY} 
+    volumes:
+      - ./api/app/:/app
+    ports:
+      - "5002:5002"
+    container_name: sentiment_api
+  
+  dashboard:
+    build: ./dashboard
+    volumes:
+      - ./dashboard:/app
+    ports:
+      - "8050:8050"
+    container_name: sentiment_dashboard
+    depends_on:
+      - api

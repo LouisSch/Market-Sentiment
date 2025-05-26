@@ -1,0 +1,39 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+
+# IDE Configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.pid.lock
+
+# .env secret
+.env
+
+# Dash
+__dash__/
+
+# Pip cache
+pip-log.txt
+pip-delete-this-directory.txt
